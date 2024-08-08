@@ -2,6 +2,9 @@
 
 See the details in our paper here: [Paper Link](paper/SLIM.pdf)
 
+Abstract
+> Language models are prone to occasionally undesirable generations, such as harmful or toxic content, despite their impressive capability to produce texts that appear accurate and coherent. In this paper, we present a new three-stage approach to detect and mitigate undesirable content generations by rectifying activations. First, we train an ensemble of layer-wise classifiers to detect undesirable content using activations by minimizing a smooth surrogate of the risk-aware score. Second, for contents that are detected as undesirable, we propose layer-wise distributional intervention policies that perturb the attention heads minimally while guaranteeing probabilistically the effectiveness of the intervention. Finally, we aggregate layer-wise interventions to minimize the semantic shifts of the false detection, which is achieved by aligning aggregations based on semantic preference data. Benchmarks on several language models and datasets show that our method outperforms baselines in reducing the generation of undesirable output.
+
 ## Installation
 ```bash
 conda env create -f environment.yaml
